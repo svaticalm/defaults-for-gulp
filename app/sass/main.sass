@@ -1,0 +1,47 @@
+@import "vars"
+@import "default"
+@import "libs"
+$vw-viewport: 2100
+$vw-enable: true
+
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif !important
+    &:before, &:after
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+*::-webkit-input-placeholder
+    color: #666
+    opacity: 1
+
+*:-moz-placeholder
+    color: #666
+    opacity: 1
+
+*::-moz-placeholder
+    color: #666
+    opacity: 1
+
+*:-ms-input-placeholder
+    color: #666
+    opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #666
+body input:required:valid,
+body textarea:required:valid
+    color: #666
+
+html, body
+    height: auto
+    min-height: 100vh
+html
+    display: flex
+    align-items: center
+    justify-content: center
+
+@import "media" // Всегда в конце
